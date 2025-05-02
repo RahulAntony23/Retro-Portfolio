@@ -1,0 +1,14 @@
+.bottom-menu {
+    position: fixed;   /* Fixes it to the bottom */
+    bottom: 0;         /* Aligns to the bottom */
+    left: 0;
+    width: 100%;       /* Full width */
+    background: black; /* Example background color */
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;    /* Ensures it stays on top */
+  }
+  

@@ -1,0 +1,57 @@
+/* Set the background color for the entire section */
+.certifications {
+    background: blue;  /* ✅ Ensures retro blue background */
+    padding: 20px;
+    text-align: left;
+    min-height: 100vh; /* Makes sure it covers the full screen */
+  }
+  
+  /* Retro-style title */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Courier New", monospace;
+    background: white;
+    display: inline-block;
+    padding: 5px 10px;
+    box-shadow: 3px 3px 0 black;
+  }
+  
+  /* Grid layout for certifications */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px;
+    margin-top: 20px;
+    justify-items: center;
+  }
+  
+  /* Certification item box */
+  .cert-item {
+    background: lightgray;
+    padding: 10px;
+    box-shadow: 3px 3px 0 black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px; /* Adjust the size */
+    height: 250px;
+  }
+  
+  /* Certification images */
+  .cert-image {
+    width: 180px;
+    height: 180px;
+    background: white;
+    border: 2px solid gray;
+    box-shadow: 2px 2px 0 black;
+  }
+  
+  /* Certification description */
+  .cert-desc {
+    margin-top: 10px;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    text-align: center;
+  }
+  

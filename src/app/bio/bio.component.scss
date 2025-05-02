@@ -1,0 +1,29 @@
+.screen {
+    background-color: blue;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  
+  .message-box {
+    background-color: lightgray;
+    padding: 15px;
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    width: 1000px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 0 black;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Courier New", monospace;
+    background: white;
+    display: inline-block;
+    padding: 5px 10px;
+    box-shadow: 3px 3px 0 black;
+  }

@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: blue;
+  font-family: 'Courier New', monospace;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Optional global reset */
+* {
+  box-sizing: inherit;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+
+  color: black;
+}
+
+.bio-box {
+  background-color: lightgray;
+  padding: 20px;
+  font-size: 16px;
+  width: 60%;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0 black;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: lightgray;
+  padding: 10px 20px;
+  box-shadow: 3px 3px 0 black;
+}
+
+/* Grid layout for certifications/projects */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 2rem;
+  margin-top: 20px;
+}
+
+.card {
+  background: lightgray;
+  width: 45%;
+  max-width: 300px;
+  padding: 1rem;
+  box-shadow: 3px 3px 0 black;
+  text-align: center;
+}

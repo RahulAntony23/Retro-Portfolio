@@ -9,5 +9,10 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class BottomMenuComponent {
 
-@Output() navigate = new EventEmitter<string>();
+  @Output() navigate = new EventEmitter<string>();
+
+  // Method to emit navigation paths
+  onNavigate(path: string): void {
+    this.navigate.emit(path);
+  }
 }

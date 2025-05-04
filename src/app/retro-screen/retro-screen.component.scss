@@ -1,20 +1,78 @@
+
+
 .screen {
-    background-color: blue;
-    height: 100vh;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 20px;
+  background-color: black;
+  color: #a020f0; /* Signature purple font */
+
+  display: flex;
+  align-items: center;
+  height: 100vh;
   }
   
-  .message-box {
-    background-color: lightgray;
-    padding: 15px;
-    font-family: 'Courier New', monospace;
-    font-size: 18px;
-    font-weight: bold;
-    width: 300px;
-    border-radius: 4px;
-    box-shadow: 2px 2px 0 black;
-  }
+  .retro-window {
+    border: 8px solid #a020f0;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: inset 0 0 5px #a020f0, inset 0 0 10px #a020f0, inset 0 0 15px #a020f0;
+    position: relative;
+}
+
+/* Adding a pixelated corner effect */
+.retro-window::before, .retro-window::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border: 2px solid #a020f0;
+}
+
+/* Top-left corner */
+.retro-window::before {
+    top: -8px;
+    left: -8px;
+}
+
+/* Bottom-right corner */
+.retro-window::after {
+    bottom: -8px;
+    right: -8px;
+}
+
+
+.button-container {
+  margin-top: 20px;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  background-color: #a020f0;
+  animation: blink 0.8s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.retro-button {
+  background-color: black;
+  color: white;
+  font-family: "appfont";
+  padding: 10px 20px;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.retro-button:hover {
+  background-color: white;
+  color: black;
+}
+
   

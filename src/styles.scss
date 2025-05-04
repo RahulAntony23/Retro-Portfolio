@@ -1,8 +1,17 @@
+@font-face {
+  font-family: "appfont";
+  src: url('./assets/fonts/PxPlus_HP_100LX_8x8.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 html, body {
   margin: 0;
   padding: 0;
-  background-color: blue;
-  font-family: 'Courier New', monospace;
+  background-color: black;
+  font-family: "appfont";
   box-sizing: border-box;
   scroll-behavior: smooth;
 }

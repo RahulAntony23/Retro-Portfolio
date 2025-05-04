@@ -1,57 +1,71 @@
-/* Set the background color for the entire section */
 .certifications {
-    background: blue;  /* ✅ Ensures retro blue background */
-    padding: 20px;
-    text-align: left;
-    min-height: 100vh; /* Makes sure it covers the full screen */
-  }
-  
-  /* Retro-style title */
-  .title {
-    font-size: 24px;
-    font-weight: bold;
-    font-family: "Courier New", monospace;
-    background: white;
-    display: inline-block;
-    padding: 5px 10px;
-    box-shadow: 3px 3px 0 black;
-  }
-  
-  /* Grid layout for certifications */
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
-    gap: 20px;
-    margin-top: 20px;
-    justify-items: center;
-  }
-  
-  /* Certification item box */
-  .cert-item {
-    background: lightgray;
-    padding: 10px;
-    box-shadow: 3px 3px 0 black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 250px; /* Adjust the size */
-    height: 250px;
-  }
-  
-  /* Certification images */
-  .cert-image {
-    width: 180px;
-    height: 180px;
-    background: white;
-    border: 2px solid gray;
-    box-shadow: 2px 2px 0 black;
-  }
-  
-  /* Certification description */
-  .cert-desc {
-    margin-top: 10px;
-    font-family: "Courier New", monospace;
-    font-size: 14px;
-    text-align: center;
-  }
-  
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Asterisk border for header */
+.cert-title {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  text-align: center;
+  padding: 1%;
+}
+
+.cert-list {
+  margin-top: 5%;
+  background-color: black;
+  list-style: none;
+  padding: 0;
+}
+
+.cert-list li {
+  cursor: pointer;
+  padding: 10px;
+  margin:5px;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+
+.cert-list li.selected {
+  background-color: #a020f0;
+}
+
+/* Open button */
+.open-button {
+  background-color: white;
+  color: black;
+  font-family: 'appfont', monospace;
+  font-size: 8px;
+  padding: 5px;
+  cursor: pointer;
+  border: 1px solid white;
+
+}
+
+.open-button:hover {
+  background-color: #a020f0;
+  color: white;
+}
+
+/* Certification Image */
+.cert-image-container {
+  margin-top: 20px;
+  border: 2px solid white;
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+
+.cert-image-container img {
+  width: 100%;
+  height: auto;
+}

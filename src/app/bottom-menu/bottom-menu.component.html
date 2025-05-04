@@ -1,7 +1,7 @@
 <div class="bottom-menu">
-    <span (click)="navigate.emit('home')">👤</span>
-    <span (click)="navigate.emit('biography')">🏠</span>
-    <span (click)="navigate.emit('projects')">🔍</span>
-    <span (click)="navigate.emit('contact')">📞</span>
-  </div>
-  
+  <span class="menu-item" (click)="navigate.emit('home')">👤</span>
+  <span class="menu-item" (click)="navigate.emit('about')">🏠</span>
+  <span class="menu-item" (click)="navigate.emit('certs')">📜</span> <!-- Updated to 'certs' -->
+  <span class="menu-item" (click)="navigate.emit('projects')">🔍</span>
+  <span class="menu-item" (click)="navigate.emit('contact')">📞</span>
+</div>

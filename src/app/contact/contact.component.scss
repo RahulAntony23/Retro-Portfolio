@@ -1,65 +1,80 @@
-/* Set the background color */
+/* Set the retro background */
 .contact {
-    background: blue;
-    padding: 20px;
-    min-height: 100vh;
-    text-align: left;
-  }
-  
-  /* Retro-style title */
-  .title {
-    font-size: 24px;
-    font-weight: bold;
-    font-family: "Courier New", monospace;
-    background: white;
-    display: inline-block;
-    padding: 5px 10px;
-    box-shadow: 3px 3px 0 black;
-  }
-  
-  /* Form container */
-  .contact-form {
-    background: lightgray;
-    padding: 20px;
-    margin-top: 20px;
-    box-shadow: 3px 3px 0 black;
-    display: flex;
-    flex-direction: column;
-    width: 800px;
-    height: 450px;
-  }
-  
-  /* Labels */
-  label {
-    font-family: "Courier New", monospace;
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  
-  /* Input fields */
-  input, textarea {
-    width: 100%;
-    padding: 5px;
-    font-size: 16px;
-    font-family: "Courier New", monospace;
-    border: 2px solid black;
-    background: white;
-    margin-bottom: 10px;
-  }
-  
-  textarea {
-    height: 150px;
-    resize: vertical;
-    margin-bottom: 5%;
-  }
-  /* Button */
-  button {
-    background: black;
-    color: white;
-    padding: 8px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    box-shadow: 2px 2px 0 white;
-  }
-  
+  background: black;
+  padding: 30px;
+  min-height: 100vh;
+  text-align: left;
+}
+
+/* Retro-style title */
+.title {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "Courier New", monospace;
+  color: #a020f0; /* Purple monochrome text */
+  background: black;
+  display: inline-block;
+  padding: 8px 12px;
+  border: 3px solid #a020f0;
+  box-shadow: 4px 4px 0 white;
+}
+
+/* Form container */
+.contact-form {
+  background: black;
+  padding: 20px;
+  margin-top: 20px;
+  border: 3px solid #a020f0;
+  box-shadow: 5px 5px 0 white;
+  display: flex;
+  flex-direction: column;
+  width: 850px;
+  height: 470px;
+}
+
+/* Labels */
+label {
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+/* Input fields */
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 18px;
+  font-family: "Courier New", monospace;
+  border: 2px solid white;
+  background: black;
+  color: white;
+  margin-bottom: 12px;
+  box-shadow: 3px 3px 0 #a020f0;
+}
+
+/* Textarea adjustments */
+textarea {
+  height: 180px;
+  resize: vertical;
+  margin-bottom: 6%;
+}
+
+/* Button */
+button {
+  background: #a020f0;
+  color: black;
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  padding: 10px;
+  border: 2px solid white;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 white;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: white;
+  color: black;
+  box-shadow: 3px 3px 0 #a020f0;
+}

@@ -1,11 +1,16 @@
+<div class="cert-title">********* Certifications *********</div>
 <div class="certifications">
-    <h2 class="title">Certifications</h2>
-    
-    <div class="grid">
-      <div class="cert-item" *ngFor="let cert of certifications">
-        <img [src]="cert.image" alt="Certification Image" class="cert-image" />
-        <p class="cert-desc">{{ cert.title }}</p>
-      </div>
+    <ul class="cert-list" tabindex="0" (keydown)="handleKeyPress($event)">
+        <li *ngFor="let cert of certifications; let i = index"
+            [class.selected]="i === selectedIndex"
+            (click)="selectCert(cert, i)"
+            tabindex="0">
+            {{ cert.name }}
+            <button class="open-button" (click)="openLink(cert.link, $event)">Open</button>
+        </li>
+    </ul>
+
+    <div class="cert-image-container">
+        <img *ngIf="selectedCert.image" [src]="selectedCert.image" alt="Certification Badge">
     </div>
-  </div>
-  
+</div>

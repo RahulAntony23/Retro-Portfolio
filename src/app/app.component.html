@@ -1,26 +1,4 @@
+<app-loading-screen #loadingScreen></app-loading-screen>
+<app-bottom-menu (navigate)="onNavigate($event)"></app-bottom-menu>
 
-  <section id="home">
-    <app-retro-screen></app-retro-screen>
-  </section>
-
-  <section id="biography">
-    <app-bio></app-bio>
-  </section>
-
-  <section id="certifications">
-    <app-certifications></app-certifications>
-  </section>
-
-  <section id="projects">
-    <app-projects></app-projects>
-  </section>
-
-  <section id="contact">
-    <app-contact></app-contact>
-  </section>
-  
-
- 
-
-  <app-bottom-menu (navigate)="scrollToSection($event)"></app-bottom-menu>
-
+<router-outlet (activate)="loadingScreen.show()"></router-outlet>

@@ -1,14 +1,30 @@
 .bottom-menu {
-    position: fixed;   /* Fixes it to the bottom */
-    bottom: 0;         /* Aligns to the bottom */
-    left: 0;
-    width: 100%;       /* Full width */
-    background: black; /* Example background color */
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;    /* Ensures it stays on top */
-  }
-  
+  position: fixed;  /* Fixed to bottom */
+  bottom: 20px;     /* Slight lift for retro feel */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;       /* Adjusted width */
+  background: black;
+  border: 5px double #a020f0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around; /* Space between items */
+  align-items: center;
+ /* Slight retro rounding */
+ /* Retro glow */
+}
+
+.menu-item {
+  font-size: 25px; /* Bigger icons */
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border: 2px solid #a020f0;
+
+}
+
+.menu-item:hover {
+  background: white;
+  color: black;
+   /* Slight zoom effect */
+}

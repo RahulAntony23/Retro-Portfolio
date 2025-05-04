@@ -1,57 +1,60 @@
 /* Set the background color */
 .projects {
-    background: blue;
-    padding: 20px;
-    min-height: 100vh;
-    text-align: left;
-  }
-  
-  /* Retro-style title */
-  .title {
-    font-size: 24px;
-    font-weight: bold;
-    font-family: "Courier New", monospace;
-    background: white;
-    display: inline-block;
-    padding: 5px 10px;
-    box-shadow: 3px 3px 0 black;
-  }
-  
-  /* Grid layout for projects - 2 columns per row */
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 2 columns */
-    gap: 30px;
-    margin-top: 20px;
-    justify-items: center;
-  }
-  
-  /* Project item box - Bigger size */
-  .project-item {
-    background: lightgray;
-    padding: 15px;
-    box-shadow: 3px 3px 0 black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 400px; /* Bigger width */
-    height: 250px; /* Bigger height */
-  }
-  
-  /* Project images */
-  .project-image {
-    width: 300px;
-    height: 180px;
-    background: white;
-    border: 2px solid gray;
-    box-shadow: 2px 2px 0 black;
-  }
-  
-  /* Project description */
-  .project-desc {
-    margin-top: 10px;
-    font-family: "Courier New", monospace;
-    font-size: 16px;
-    text-align: center;
-  }
-  
+  background: black;
+  padding: 30px;
+  min-height: 100vh;
+  text-align: left;
+}
+
+/* Retro-style title */
+.title {
+  font-size: 26px;
+  font-weight: bold;
+
+  color: #a020f0; /* Purple retro text */
+  background: black;
+  display: inline-block;
+  padding: 8px 12px;
+  border: 3px solid #a020f0;
+  box-shadow: 4px 4px 0 white;
+}
+
+/* Grid layout for projects */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr); /* 2 columns */
+  gap: 60px;
+  margin-top: 20px;
+  justify-items: center;
+}
+
+/* Project item box - More retro-style */
+.project-item {
+  background: black;
+  padding: 20px;
+  border: 3px solid #a020f0;
+  box-shadow: 5px 5px 0 white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 420px;
+  height: 260px;
+}
+
+/* Project images */
+.project-image {
+  width: 320px;
+  height: 190px;
+  background: black;
+  border: 3px solid white;
+  box-shadow: 3px 3px 0 #a020f0;
+}
+
+/* Project description */
+.project-desc {
+  margin-top: 12px;
+
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
